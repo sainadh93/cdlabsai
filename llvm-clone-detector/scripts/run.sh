@@ -35,7 +35,7 @@ run_detect() {
     shift
     $PYTHON "$DETECTOR" detect \
         --inputs "$@" \
-        --threshold 0.60 \
+        --threshold 0.88 \
         --min-bb 1 \
         --output text
 }
@@ -68,7 +68,7 @@ detect)
             "$TC_DIR/rust/bubble_sort.ll" \
             "$TC_DIR/c/functions.ll" \
             "$TC_DIR/rust/functions.ll" \
-        --threshold 0.60 \
+        --threshold 0.88 \
         --min-bb 1 \
         --output text \
         --save "$RESULTS_DIR/detection_results.json"
@@ -81,7 +81,7 @@ evaluate)
     sep
     $PYTHON "$DETECTOR" evaluate \
         --corpus "$TC_DIR" \
-        --threshold 0.65
+        --threshold 0.88
     echo ""
     echo "Results saved to: $TC_DIR/evaluation_results.json"
     ;;
@@ -106,7 +106,7 @@ all|*)
             "$TC_DIR/c/bubble_sort.ll" \
             "$TC_DIR/cpp/bubble_sort.ll" \
             "$TC_DIR/rust/bubble_sort.ll" \
-        --threshold 0.50 \
+        --threshold 0.88 \
         --min-bb 1 \
         --cross-lang \
         --output text
@@ -120,7 +120,7 @@ all|*)
         --inputs \
             "$TC_DIR/c/functions.ll" \
             "$TC_DIR/rust/functions.ll" \
-        --threshold 0.50 \
+        --threshold 0.88 \
         --min-bb 1 \
         --cross-lang \
         --output text
@@ -134,7 +134,7 @@ all|*)
         --inputs \
             "$TC_DIR/c/functions.ll" \
             "$TC_DIR/rust/functions.ll" \
-        --threshold 0.50 \
+        --threshold 0.88 \
         --min-bb 2 \
         --output text
 
@@ -146,7 +146,7 @@ all|*)
     $PYTHON "$DETECTOR" detect \
         --inputs \
             "$TC_DIR/c/functions.ll" \
-        --threshold 0.30 \
+        --threshold 0.88 \
         --min-bb 2 \
         --output text
 
@@ -159,7 +159,7 @@ all|*)
     $PYTHON "$DETECTOR" detect \
         --inputs \
             "$TC_DIR/c/functions.ll" \
-        --threshold 0.20 \
+        --threshold 0.88 \
         --min-bb 1 \
         --verbose \
         --output text | grep -A5 -E "(binary_search|linear_search|Clone Pair|Score)" || true
@@ -178,7 +178,7 @@ all|*)
             "$TC_DIR/rust/bubble_sort.ll" \
             "$TC_DIR/c/functions.ll" \
             "$TC_DIR/rust/functions.ll" \
-        --threshold 0.65 \
+        --threshold 0.88 \
         --min-bb 2 \
         --output text \
         --save "$RESULTS_DIR/full_results.json"
@@ -189,7 +189,7 @@ all|*)
     sep
     $PYTHON "$DETECTOR" evaluate \
         --corpus "$TC_DIR" \
-        --threshold 0.65
+        --threshold 0.88
 
     sep
     echo "  DEMO COMPLETE"

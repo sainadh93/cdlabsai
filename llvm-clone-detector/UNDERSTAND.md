@@ -260,3 +260,11 @@ export PYTHONPATH="$PWD/src"
 
 # 3. Run the full demo
 ./run.sh
+
+
+to just show the cross language pairs this is enough to show the clean output
+python3 src/cli/clone_detector.py detect \
+    --inputs testcases/c/bubble_sort.ll testcases/cpp/bubble_sort.ll \
+             testcases/rust/bubble_sort.ll testcases/c/functions.ll \
+             testcases/rust/functions.ll \
+    --threshold 0.88 --min-bb 2 --cross-lang --output text
