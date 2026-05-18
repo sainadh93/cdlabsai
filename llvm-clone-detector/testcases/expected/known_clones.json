@@ -1,0 +1,34 @@
+{
+  "description": "Known cross-language clone pairs for evaluation",
+  "version": "2.0",
+  "clone_pairs": [
+    {
+      "id": "TC1-bubble-c-rust",
+      "func_a": "bubble_sort",
+      "func_b": "bubble_sort11bubble_sort17h3a9d8f2e1c4b5d6eE",
+      "lang_a": "c", "lang_b": "rust",
+      "clone_type": "Type-4 semantic"
+    },
+    {
+      "id": "TC1-bubble-c-cpp",
+      "func_a": "bubble_sort",
+      "func_b": "Z11bubble_sortRSt6vectorIiSaIiEE",
+      "lang_a": "c", "lang_b": "cpp",
+      "clone_type": "Type-4 semantic"
+    },
+    {
+      "id": "TC2-gcd-c-rust",
+      "func_a": "gcd",
+      "func_b": "search3gcd17ha1b2c3d4e5f6a7b8E",
+      "lang_a": "c", "lang_b": "rust",
+      "clone_type": "Type-3 near-miss"
+    },
+    {
+      "id": "TC3-linear-c-rust",
+      "func_a": "linear_search",
+      "func_b": "search13linear_search17hf1e2d3c4b5a6e7f8E",
+      "lang_a": "c", "lang_b": "rust",
+      "clone_type": "Type-3 near-miss"
+    }
+  ]
+}
