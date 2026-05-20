@@ -1,21 +1,24 @@
-/* Test Case 4: GCD — C implementation */
+/* Test Case 1: Bubble Sort — C implementation */
 #include <stdio.h>
 
-int gcd(int a, int b) {
-    while (b != 0) {
-        int t = b;
-        b = a % b;
-        a = t;
+void bubble_sort(int *arr, int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+            }
+        }
     }
-    return a;
-}
-
-int lcm(int a, int b) {
-    return (a / gcd(a, b)) * b;
 }
 
 int main() {
-    printf("gcd(48,18) = %d\n", gcd(48, 18));
-    printf("lcm(4,6) = %d\n", lcm(4, 6));
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = 7;
+    bubble_sort(arr, n);
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
     return 0;
 }

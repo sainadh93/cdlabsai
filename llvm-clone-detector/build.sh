@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+./#!/usr/bin/env bash
 # ============================================================
 # build.sh — Cross-Language Clone Detector: Build & Setup
 # ============================================================
@@ -92,6 +92,7 @@ compile_if_available "clang"   "$IR_DIR/c/factorial.c"      "$IR_DIR/c/factorial
 compile_if_available "clang"   "$IR_DIR/c/search.c"         "$IR_DIR/c/search.ll"
 compile_if_available "clang"   "$IR_DIR/c/gcd.c"            "$IR_DIR/c/gcd.ll"
 compile_if_available "clang"   "$IR_DIR/c/matmul.c"         "$IR_DIR/c/matmul.ll"
+compile_if_available "clang"   "$IR_DIR/c/similar_different.c" "$IR_DIR/c/similar_different.ll"
 compile_if_available "clang++" "$IR_DIR/cpp/bubble_sort.cpp" "$IR_DIR/cpp/bubble_sort.ll"
 compile_if_available "clang++" "$IR_DIR/cpp/matmul.cpp"     "$IR_DIR/cpp/matmul.ll"
 
@@ -110,7 +111,7 @@ echo "[5/5] Running smoke test..."
 cd "$PROJECT_ROOT"
 
 PYTHONPATH="$PROJECT_ROOT/src" python3 src/cli/clone_detector.py detect \
-    --inputs ../testcases/c/bubble_sort.ll ../testcases/cpp/bubble_sort.ll \
+    --inputs testcases/c/bubble_sort.ll testcases/cpp/bubble_sort.ll \
     --threshold 0.5 \
     --min-bb 1 \
     --output text 2>>"$LOG_FILE" | head -20

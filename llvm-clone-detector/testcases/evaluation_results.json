@@ -1,13 +1,37 @@
 {
   "threshold": 0.88,
-  "functions_analyzed": 9,
-  "precision": 0.6666666666666666,
-  "recall": 1.0,
-  "f1": 0.8,
-  "true_positives": 4,
-  "false_positives": 2,
-  "false_negatives": 0,
+  "functions_analyzed": 35,
+  "precision": 0.16666666666666666,
+  "recall": 0.75,
+  "f1": 0.27272727272727276,
+  "true_positives": 3,
+  "false_positives": 15,
+  "false_negatives": 1,
   "detected_pairs": [
+    {
+      "func_a": "std2rt10lang_start28_::b::b::d::d::h6c0c501f0f1d790dE",
+      "lang_a": "rust",
+      "func_b": "::0::0::fmt17h31ec6178f8785b3dE",
+      "lang_b": "rust",
+      "score": 1.0,
+      "cross_language": false
+    },
+    {
+      "func_a": "std2rt10lang_start28_::b::b::d::d::h6c0c501f0f1d790dE",
+      "lang_a": "rust",
+      "func_b": "core3ops8function6FnOnce40call_once::b::b::d::d::h218d10f1a907cb44E",
+      "lang_b": "rust",
+      "score": 1.0,
+      "cross_language": false
+    },
+    {
+      "func_a": "::0::0::fmt17h31ec6178f8785b3dE",
+      "lang_a": "rust",
+      "func_b": "core3ops8function6FnOnce40call_once::b::b::d::d::h218d10f1a907cb44E",
+      "lang_b": "rust",
+      "score": 1.0,
+      "cross_language": false
+    },
     {
       "func_a": "search3gcd17ha1b2c3d4e5f6a7b8E",
       "lang_a": "rust",
@@ -15,6 +39,22 @@
       "lang_b": "c",
       "score": 1.0,
       "cross_language": true
+    },
+    {
+      "func_a": "bubble_sort",
+      "lang_a": "fortran",
+      "func_b": "bubble_sort",
+      "lang_b": "fortran",
+      "score": 1.0,
+      "cross_language": false
+    },
+    {
+      "func_a": "main",
+      "lang_a": "fortran",
+      "func_b": "main",
+      "lang_b": "fortran",
+      "score": 1.0,
+      "cross_language": false
     },
     {
       "func_a": "search13linear_search17hf1e2d3c4b5a6e7f8E",
@@ -25,28 +65,92 @@
       "cross_language": true
     },
     {
-      "func_a": "bubble_sort11bubble_sort17h3a9d8f2e1c4b5d6eE",
+      "func_a": "std3sys9backtrace28__rust_begin_short_backtrace17h88b06b790d59ddedE",
       "lang_a": "rust",
-      "func_b": "Z11bubble_sortRSt6vectorIiSaIiEE",
-      "lang_b": "rust",
-      "score": 0.9862,
+      "func_b": "main",
+      "lang_b": "c",
+      "score": 0.9781,
+      "cross_language": true
+    },
+    {
+      "func_a": "count_positive",
+      "lang_a": "c",
+      "func_b": "sum_positive",
+      "lang_b": "c",
+      "score": 0.9412,
       "cross_language": false
     },
     {
-      "func_a": "bubble_sort11bubble_sort17h3a9d8f2e1c4b5d6eE",
-      "lang_a": "rust",
-      "func_b": "bubble_sort",
+      "func_a": "main",
+      "lang_a": "c",
+      "func_b": "main",
       "lang_b": "c",
-      "score": 0.8957,
+      "score": 0.9295,
+      "cross_language": false
+    },
+    {
+      "func_a": "main",
+      "lang_a": "fortran",
+      "func_b": "main",
+      "lang_b": "rust",
+      "score": 0.9224,
+      "cross_language": true
+    },
+    {
+      "func_a": "std3sys9backtrace28__rust_begin_short_backtrace17h88b06b790d59ddedE",
+      "lang_a": "rust",
+      "func_b": "main",
+      "lang_b": "c",
+      "score": 0.9074,
+      "cross_language": true
+    },
+    {
+      "func_a": "matmul",
+      "lang_a": "fortran",
+      "func_b": "Z6matmulRKSt5arrayIS_IiLm3EELm3EES3_",
+      "lang_b": "rust",
+      "score": 0.9059,
       "cross_language": true
     },
     {
       "func_a": "bubble_sort",
-      "lang_a": "c",
+      "lang_a": "fortran",
       "func_b": "Z11bubble_sortRSt6vectorIiSaIiEE",
       "lang_b": "rust",
-      "score": 0.8844,
+      "score": 0.8994,
       "cross_language": true
+    },
+    {
+      "func_a": "bubble_sort",
+      "lang_a": "fortran",
+      "func_b": "Z11bubble_sortRSt6vectorIiSaIiEE",
+      "lang_b": "rust",
+      "score": 0.8994,
+      "cross_language": true
+    },
+    {
+      "func_a": "main",
+      "lang_a": "fortran",
+      "func_b": "main",
+      "lang_b": "fortran",
+      "score": 0.8986,
+      "cross_language": false
+    },
+    {
+      "func_a": "main",
+      "lang_a": "fortran",
+      "func_b": "main",
+      "lang_b": "fortran",
+      "score": 0.8986,
+      "cross_language": false
+    },
+    {
+      "func_a": "factorial",
+      "lang_a": "c",
+      "func_b": "factorial_recursive",
+      "lang_b": "c",
+      "score": 0.8853,
+      "cross_language": false
     },
     {
       "func_a": "factorial",

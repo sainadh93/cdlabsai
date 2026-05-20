@@ -1,0 +1,166 @@
+{
+  "clone_pairs": [
+    {
+      "score": 1.0,
+      "cross_language": true,
+      "function_a": {
+        "name": "gcd",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/c/functions.ll",
+        "lang": "c",
+        "bb_count": 1,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "function_b": {
+        "name": "search3gcd17ha1b2c3d4e5f6a7b8E",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/rust/functions.ll",
+        "lang": "rust",
+        "bb_count": 1,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "metric_breakdown": {
+        "structural": 1.0,
+        "opcode": 1.0,
+        "cfg": 1.0,
+        "params": 1.0,
+        "wl_hash_match": true
+      }
+    },
+    {
+      "score": 0.9889,
+      "cross_language": true,
+      "function_a": {
+        "name": "linear_search",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/c/functions.ll",
+        "lang": "c",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "function_b": {
+        "name": "search13linear_search17hf1e2d3c4b5a6e7f8E",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/rust/functions.ll",
+        "lang": "rust",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "metric_breakdown": {
+        "structural": 0.9996,
+        "opcode": 0.9688,
+        "cfg": 1.0,
+        "params": 1.0,
+        "wl_hash_match": false
+      }
+    },
+    {
+      "score": 0.9862,
+      "cross_language": false,
+      "function_a": {
+        "name": "Z11bubble_sortRSt6vectorIiSaIiEE",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/cpp/bubble_sort.ll",
+        "lang": "rust",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "function_b": {
+        "name": "bubble_sort11bubble_sort17h3a9d8f2e1c4b5d6eE",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/rust/bubble_sort.ll",
+        "lang": "rust",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "metric_breakdown": {
+        "structural": 0.9998,
+        "opcode": 0.9608,
+        "cfg": 1.0,
+        "params": 1.0,
+        "wl_hash_match": false
+      }
+    },
+    {
+      "score": 0.8957,
+      "cross_language": true,
+      "function_a": {
+        "name": "bubble_sort",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/c/bubble_sort.ll",
+        "lang": "c",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "function_b": {
+        "name": "bubble_sort11bubble_sort17h3a9d8f2e1c4b5d6eE",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/rust/bubble_sort.ll",
+        "lang": "rust",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "metric_breakdown": {
+        "structural": 0.952,
+        "opcode": 0.807,
+        "cfg": 1.0,
+        "params": 0.8,
+        "wl_hash_match": false
+      }
+    },
+    {
+      "score": 0.8844,
+      "cross_language": true,
+      "function_a": {
+        "name": "bubble_sort",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/c/bubble_sort.ll",
+        "lang": "c",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "function_b": {
+        "name": "Z11bubble_sortRSt6vectorIiSaIiEE",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/cpp/bubble_sort.ll",
+        "lang": "rust",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "metric_breakdown": {
+        "structural": 0.951,
+        "opcode": 0.7759,
+        "cfg": 1.0,
+        "params": 0.8,
+        "wl_hash_match": false
+      }
+    },
+    {
+      "score": 0.8813,
+      "cross_language": false,
+      "function_a": {
+        "name": "factorial",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/c/functions.ll",
+        "lang": "c",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "function_b": {
+        "name": "linear_search",
+        "file": "/home/sai/llvm-clone-detector/llvm-clone-detector/testcases/c/functions.ll",
+        "lang": "c",
+        "bb_count": 3,
+        "cyclomatic_complexity": 1,
+        "has_loop": false
+      },
+      "metric_breakdown": {
+        "structural": 0.9854,
+        "opcode": 0.8182,
+        "cfg": 0.95,
+        "params": 0.6,
+        "wl_hash_match": false
+      }
+    }
+  ]
+}
